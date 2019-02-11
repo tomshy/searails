@@ -22,7 +22,7 @@ end
 class Comment
 	attr_accessor :commentBody
 	@@comments=Hash.new { |hash, key| hash[key] = {} }	
-	def initialize(articleId,commentBody)
+	def initialize(article_id,comment_body)
 		@article_id=article_id
 		@comment_body=comment_body
 		@@comments[@article_id][:comment_body]=comment_body					
